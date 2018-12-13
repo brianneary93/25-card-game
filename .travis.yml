@@ -1,12 +1,3 @@
-language: python
-python:
-    - "3.6"
-before_install:
-    - pip install pytest
-    - pip install pytest-cov
-    - pip install coveralls
-script:
-   - pytest --cov=card_game
-   - coverage report --fail-under=80
-after_success:
-  - coveralls
+language: java
+java:
+    - "9"
